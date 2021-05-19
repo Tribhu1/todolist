@@ -1,38 +1,64 @@
 .App {
+  max-width: 100em;
+  min-height: 100em;
+  margin: 0 auto;
+  padding: 32px;
+  background-color: aquamarine;
+}
+
+.todo-input {
+  font-size: 24px;
+  border: 25px;
+  width: 50%;
+  border: 2px;
+  padding: 5px;
+  border-radius: 25px;
+}
+
+.todo-input:focus {
+  outline: none;
+}
+
+.done {
+  text-decoration: line-through;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.todo {
+  margin: 32px 0px;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  font-size: 24px;
+  text-align: center;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+  background: #d9d9d9;
+  font-size: 10px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  border: 1px solid #fff;
+  transition: all 100ms ease;
 }
 
-.App-link {
-  color: #61dafb;
+.checkbox:hover {
+  opacity: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.delete {
+  margin-left: auto;
+  font-size: 20px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+
+.delete:hover {
+  opacity: 1;
 }
